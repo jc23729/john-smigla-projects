@@ -1,9 +1,21 @@
-import React from 'react';
+import React from "react";
 
 const ErrorExample = () => {
-  return <h2>
-    Error Example
-  </h2>
+
+  let title = "random title";
+  const handleClick = () => {
+    title = "hello people";
+     console.log(title);
+   };
+
+  return (
+    <>
+      <h1>{title}</h1>
+      <button type="button" className="btn" onClick={handleClick}>
+        change title
+      </button>
+    </>
+  );
 };
 
 export default ErrorExample;
