@@ -4,8 +4,8 @@ const ErrorExample = () => {
 
   let title = "random title";
   const handleClick = () => {
-    title = "hello people";
-     console.log(title);
+ title = "hello people"
+     
    };
 
   return (
