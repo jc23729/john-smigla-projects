@@ -3,12 +3,23 @@ import { data } from "../../../data";
 
 
 
+// dummy data coming in from data file
+// export const data = [
+//   { id: 1, name: "john" },
+//   { id: 2, name: "peter" },
+//   { id: 3, name: "susan" },
+//   { id: 4, name: "anna" },
+// ];
+
+
 const UseStateArray = () => {
   // React.useState(data) is just a diffrent way of importing the data
   const [people, setPeople] = React.useState(data);
 
   const removeItem = (id) => {
+    // filter out the matching items in the array
     let newPeople = people.filter((person) => person.id !== id);
+    console.log(newPeople);
     setPeople(newPeople);
   };
   return (
