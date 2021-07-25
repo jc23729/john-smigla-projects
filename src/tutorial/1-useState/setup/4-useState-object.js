@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const UseStateObject = () => {
+  const [person, setPerson] = useState({
+    name: "peter",
+    age: 30,
+    message: "hello",
+  });
   return <h2>useState object example</h2>;
 };
 
