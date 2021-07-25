@@ -1,5 +1,8 @@
 import React from "react";
 import { data } from "../../../data";
+
+
+
 const UseStateArray = () => {
   // React.useState(data) is just a diffrent way of importing the data
   const [people, setPeople] = React.useState(data);
@@ -20,10 +23,12 @@ const UseStateArray = () => {
           </div>
         );
       })}
+      {/* setPeople set to an empty array, but right away its invoked
+      so we setup an arrow function to invoke it only when we click on the button */}
       <button className="btn" onClick={() => setPeople([])}>
         clear items
       </button>
-    </>
+    </> 
   );
 };
 
