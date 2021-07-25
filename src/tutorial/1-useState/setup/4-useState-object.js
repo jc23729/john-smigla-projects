@@ -6,6 +6,7 @@ const UseStateObject = () => {
     age: 30,
     message: "hello",
   });
+  console.log(person);
   return <h2>useState object example</h2>;
 };
 
